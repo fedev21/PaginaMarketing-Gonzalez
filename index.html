@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripcion del sitio">
+    <title>Clase 12 - Proyecto Final</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,400&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__logo">
+            <a href="index.html"><a href="index.html">
+                    <h1 class="header__logo_title">Logo</h1>
+                </a></a>
+            <ul class="header__logo_redes-menu redes-menu nav-menu">
+                <li class="redes-menu_link nav-item"><a class="nav-link" href="facebook.com" target="_blank"><span
+                            class="sr-text">Facebook</span></a></li>
+                <li class="redes-menu_link nav-item"><a class="nav-link" href="twitter.com" target="_blank"><span
+                            class="sr-text">Twitter</span></a></li>
+                <li class="redes-menu_link nav-item"><a class="nav-link" href="instagram.com" target="_blank"><span
+                            class="sr-text">Instagram</span></a></li>
+                <li class="redes-menu_link nav-item"><a class="nav-link" href="youtube.com" target="_blank"><span
+                            class="sr-text">Youtube</span></a></li>
+                <li class="redes-menu_link nav-item"><a class="nav-link" href="linkedin.com" target="_blank"><span
+                            class="sr-text">LinkedIn</span></a></li>
+            </ul>
+        </section>
+        <nav class="header__menu">
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="carouselExampleIndicators" class="content__carousel carousel slide" data-ride="carousel"
+        data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-md-block">
+                    <img src="images/blog-digital-marketing-strategies-400x200-1-400x200.png" alt="First slide">
+                    <h5>First slide label</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-md-block">
+                    <img src="images/blog-digital-marketing-strategies-400x200-1-400x200.png" alt="Second slide">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nesciunt.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <main class="content container">
+        <section class="content__services" id="services">
+            <h2>Services</h2>
+            <p>resumen de services</p>
+        </section>
+        <section class="content__about" id="about">
+            <h2>About</h2>
+            <p>resumen de about</p>
+        </section>
+        <section class="content__blog" id="blog">
+            <h2>Blog</h2>
+            <p>resumen de blog</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__contact" id="contact">
+            <p>Formulario de contacto</p>
+        </div>
+        <ul class="footer__redes-menu redes-menu nav-menu">
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="facebook.com" target="_blank"><span
+                        class="sr-text">Facebook</span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="twitter.com" target="_blank"><span
+                        class="sr-text">Twitter</span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="instagram.com" target="_blank"><span
+                        class="sr-text">Instagram</span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="youtube.com" target="_blank"><span
+                        class="sr-text">Youtube</span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="linkedin.com" target="_blank"><span
+                        class="sr-text">LinkedIn</span></a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
