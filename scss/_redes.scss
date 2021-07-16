@@ -1,0 +1,30 @@
+/* Redes */
+
+$redes: (
+    instagram: #d43066,
+    facebook: #0778e8,
+    linkedin: #027fb5,
+    twitter: #1da1f2,
+    youtube: #ff0000,
+);
+
+.redes-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    &_link {
+        a {
+            text-decoration: none;
+            color: var(--white-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            @each $social, $color in $redes {
+                &[href*="#{$social}"] {
+                    color: $color;
+                }
+            }
+        }
+    }
+}

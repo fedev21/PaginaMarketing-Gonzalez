@@ -1,0 +1,25 @@
+/* Cursos */
+$paddingcursos: 20px;
+
+.cursos {
+    margin: 50px 0;
+    &__table {
+        margin: 0 auto;
+        padding: $paddingcursos;
+        background: white;
+        tr {
+            th {
+                text-transform: uppercase;
+            }
+            td {
+                border: 2px solid var(--black-color);
+                padding: ($paddingcursos)-5;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

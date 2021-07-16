@@ -1,0 +1,15 @@
+{
+  "name": "marketing_proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "sass --watch scss/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

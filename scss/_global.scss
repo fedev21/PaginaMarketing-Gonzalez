@@ -1,0 +1,65 @@
+/* Global */
+:root {
+    --primary-color: #ffe473;
+    --second-color: #28292b;
+    --third-color: #bcbdbe;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?size=626&ext=jpg);
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+body::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: var(--second-color);
+    opacity: 0.95;
+    z-index: -1;
+}
+
+/* Fonts */
+h1 {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-family: "Exo 2", sans-serif;
+}
+
+h2 {
+    color: var(--white-color);
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: center;
+    padding: 50px;
+    font-family: "Exo 2", sans-serif;
+}
+
+p {
+    color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
