@@ -1,3 +1,6 @@
+main {
+  margin-bottom: 50px;
+}
 .content {
   &__carousel {
     /* display: flex; */
@@ -44,12 +47,15 @@
 }
 
 .banner_index {
-  background-image: url(../images/background.png);
+  background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  background-image: url(../images/banner.jpg);
+  height: 70vh;
   position: relative;
   padding-top: 65px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &::before {
     position: absolute;
     top: 0;
@@ -58,12 +64,101 @@
     height: 100%;
     width: 100%;
     background-color: var(--second-color);
-    opacity: 0.3;
+    opacity: 0.6;
+  }
+  &__content {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: calc(100% - 64px);
+    align-items: center;
+    div {
+      h2 {
+        font-weight: bold;
+        text-align: left;
+        font-size: 65px;
+        padding: 0;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.4em;
+        font-weight: bold;
+      }
+    }
   }
 }
 
 section {
-  p {
-    text-align: center;
+  &.content {
+    &__servicios {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5%;
+        text-align: center;
+        li {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: flex-start;
+          svg {
+            width: 50px;
+            height: 50px;
+            path {
+              fill: var(--primary-color);
+            }
+          }
+          h3 {
+            margin-top: 30px;
+            width: 100%;
+            color: var(--white-color);
+            font-weight: bold;
+            padding-top: 50px;
+            position: relative;
+            &::before {
+              position: absolute;
+              top: 0;
+              right: 0;
+              content: "";
+              height: 100%;
+              width: 100%;
+              z-index: -1;
+              background-image: url(../images/svg1.svg);
+              background-repeat: no-repeat;
+              background-size: 20px;
+              background-position: center top;
+            }
+          }
+        }
+      }
+    }
+    &__nosotros {
+      background-color: var(--white-color);
+      > div {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 5%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        div {
+          padding: 20px;
+          h2 {
+            text-align: left;
+            padding: 0;
+            padding-bottom: 20px;
+            color: var(--black-color);
+          }
+          p {
+            color: var(--black-color);
+          }
+        }
+      }
+    }
+    p {
+      text-align: center;
+    }
   }
 }

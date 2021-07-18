@@ -1,9 +1,50 @@
 /* Footer */
 footer {
     padding: 50px;
-    background-color: var(--black-color);
+    background-color: var(--primary-color);
     text-align: center;
+    .contact {
+        h3,
+        span {
+            font-weight: bold;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 100px;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 70%;
+            background-color: #ffffff26;
+            div {
+                display: flex;
+                justify-content: space-between;
+                input {
+                    width: 49%;
+                }
+            }
+            input,
+            textarea {
+                font-weight: bold;
+                min-height: 50px;
+                padding-left: 5px;
+                margin: 10px 0;
+                border: none;
+                &:focus {
+                    border-radius: none;
+                }
+            }
+            transition: all 0.2s;
+            .submit {
+                &:hover {
+                    color: var(--white-color);
+                    background-color: var(--black-color);
+                }
+            }
+        }
+    }
     .redes-menu {
+        margin-top: 20px;
         justify-content: center;
     }
 }
