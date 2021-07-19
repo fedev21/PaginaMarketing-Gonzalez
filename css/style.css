@@ -488,23 +488,6 @@ section.content p {
 }
 .team .tres-columnas li {
   padding: 5px;
-  /* .img_wrapper {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin: 10px;
-    position: relative;
-    img {
-      position: absolute;
-      left: -100%;
-      right: -100%;
-      top: -100%;
-      bottom: -100%;
-      margin: auto;
-      min-height: 100%;
-      min-width: 100%;
-    }
-  } */
 }
 @media only screen and (min-width: 768px) {
   .team .tres-columnas li {
@@ -561,7 +544,7 @@ section.content p {
 }
 .cursos__table tr td {
   border: 2px solid var(--black-color);
-  padding: 15px;
+  padding: 5px;
 }
 .cursos__table tr td ul {
   list-style: none;
