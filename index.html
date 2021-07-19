@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/a89c7b53b9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,14 +24,20 @@
             <a href="index.html" class="header__logo">
                 <h1 class="header__logo_title">PixelCloud</h1>
             </a>
-            <nav class="header__menu">
-                <ul class="nav-menu">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header__menu" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav nav-menu">
+                        <li class="nav-item nav-link active"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -143,14 +149,12 @@
             </ul>
         </section>
         <section class="content__nosotros" id="nosotros">
-            <!--  <h2>Nosotros</h2> -->
             <div>
-                <img src="https://www.10wallpaper.com/wallpaper/1366x768/1701/Macbook_pro_designer-Brand_HD_Wallpaper_1366x768.jpg"
-                    alt="">
+                <img src="images/banner_nosotros.jpg" alt="">
                 <div>
                     <h2>Conocenos</h2>
                     <p>Conocenos
-                        En PixelBrain.Me te ofrecemos una solución integral para crear la presencia digital de tu
+                        En PixelCloud te ofrecemos una solución integral para crear la presencia digital de tu
                         empresa teniendo siempre como meta maximizar el tráfico y las interacciones/ingresos de tu
                         negocio.
 
@@ -169,7 +173,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="contact">
+        <div class="contact" id="contacto">
             <h3>Consiga su plan ideal</h3>
             <span>Envie un mensaje y comuníquese con nosotros</span>
             <form class="contact__form">
@@ -182,16 +186,16 @@
             </form>
         </div>
         <ul class="footer__redes-menu redes-menu nav-menu">
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="facebook.com" target="_blank"><span
-                        class="sr-text">Facebook</span></a></li>
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="twitter.com" target="_blank"><span
-                        class="sr-text">Twitter</span></a></li>
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="instagram.com" target="_blank"><span
-                        class="sr-text">Instagram</span></a></li>
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="youtube.com" target="_blank"><span
-                        class="sr-text">Youtube</span></a></li>
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="linkedin.com" target="_blank"><span
-                        class="sr-text">LinkedIn</span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://facebook.com" target="_blank"><span
+                        class="sr-text">Facebook<i class="fab fa-facebook-square"></i></span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://twitter.com" target="_blank"><span
+                        class="sr-text">Twitter<i class="fab fa-twitter-square"></i></span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://instagram.com" target="_blank"><span
+                        class="sr-text">Instagram<i class="fab fa-instagram-square"></i></span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://youtube.com" target="_blank"><span
+                        class="sr-text">Youtube<i class="fab fa-youtube-square"></i></span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://linkedin.com" target="_blank"><span
+                        class="sr-text">LinkedIn<i class="fab fa-linkedin"></i></span></a></li>
         </ul>
     </footer>
 

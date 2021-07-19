@@ -1,0 +1,118 @@
+.banner_index {
+  &-servicios {
+    background-image: url(../images/banner_servicios.jpg);
+    height: 40vh;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  &-nosotros {
+    background-image: url(../images/banner_nosotros.jpg);
+    height: 40vh;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  &-cursos {
+    background-image: url(../images/banner.jpg);
+    height: 40vh;
+    background-position: center;
+    background-attachment: scroll;
+  }
+}
+
+.content {
+  .dos-columnas {
+    @media only screen and (min-width: 768px) {
+      display: grid;
+    }
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+    &.columna30-70 {
+      grid-template-columns: 1fr 2fr;
+    }
+    &.columna70-30 {
+      grid-template-columns: 2fr 1fr;
+    }
+    div {
+      padding: 50px;
+    }
+  }
+  .tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.fondo-equipo {
+  background-image: url(../images/equipo.webp);
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    &:nth-child(1) {
+      background-color: #000000b8;
+      h3 {
+        width: 100%;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+    &:nth-child(2) {
+      background-color: #ffc940b8;
+      p {
+        color: var(--black-color);
+      }
+    }
+    p {
+      font-weight: bold;
+      text-align: right;
+    }
+  }
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 25px;
+  h3 {
+    font-weight: bold;
+  }
+  i {
+    font-size: 40px;
+    color: var(--second-color);
+  }
+  .tres-columnas {
+    li {
+      padding: 5px;
+      @media only screen and (min-width: 768px) {
+        padding: 10px;
+      }
+      h4,
+      span {
+        margin: 5px 0;
+        font-weight: bold;
+      }
+      /* .img_wrapper {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        margin: 10px;
+        position: relative;
+        img {
+          position: absolute;
+          left: -100%;
+          right: -100%;
+          top: -100%;
+          bottom: -100%;
+          margin: auto;
+          min-height: 100%;
+          min-width: 100%;
+        }
+      } */
+    }
+  }
+}

@@ -15,6 +15,7 @@ $redes: (
     margin: 0;
     padding: 0;
     &_link {
+        transition: all 0.8s;
         a {
             text-decoration: none;
             color: var(--white-color);
@@ -23,7 +24,14 @@ $redes: (
             @each $social, $color in $redes {
                 &[href*="#{$social}"] {
                     color: $color;
+                    font-size: 0;
                 }
+            }
+            i {
+                font-size: 35px;
+            }
+            &:hover i {
+                font-size: 40px;
             }
         }
     }

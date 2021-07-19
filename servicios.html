@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descripcion del sitio">
-    <title>Clase 12 - Proyecto Final</title>
+    <title>PixelCloud | Servicios</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,400&family=Roboto:wght@300&display=swap"
@@ -14,70 +14,118 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/a89c7b53b9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <section class="header__logo">
-            <a href="index.html">
-                <h1 class="header__logo_title">Logo</h1>
+        <div class="container">
+            <a href="index.html" class="header__logo">
+                <h1 class="header__logo_title">PixelCloud</h1>
             </a>
-            <ul class="header__logo_redes-menu redes-menu nav-menu">
-                <li class="redes-menu_link nav-item"><a class="nav-link" href="facebook.com" target="_blank"><span
-                            class="sr-text">Facebook</span></a></li>
-                <li class="redes-menu_link nav-item"><a class="nav-link" href="twitter.com" target="_blank"><span
-                            class="sr-text">Twitter</span></a></li>
-                <li class="redes-menu_link nav-item"><a class="nav-link" href="instagram.com" target="_blank"><span
-                            class="sr-text">Instagram</span></a></li>
-                <li class="redes-menu_link nav-item"><a class="nav-link" href="youtube.com" target="_blank"><span
-                            class="sr-text">Youtube</span></a></li>
-                <li class="redes-menu_link nav-item"><a class="nav-link" href="linkedin.com" target="_blank"><span
-                            class="sr-text">LinkedIn</span></a></li>
-            </ul>
-        </section>
-        <nav class="header__menu">
-            <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="banner">
-        <div></div>
-        <div class="banner_content">
-            <h2>Servicios</h2>
-            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, velit.</span>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header__menu" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav nav-menu">
+                        <li class="nav-item nav-link"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item nav-link active"><a class="nav-link active"
+                                href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </section>
+    </header>
+    <div class="banner_index banner_index-servicios">
+        <div class="container banner_index__content">
+            <div></div>
+            <div>
+                <h2>Servicios.</h2>
+                <p>Nuestros servicios van a ayudarte a potenciar tu marca.</p>
+            </div>
+        </div>
+    </div>
     <main class="content container">
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis totam perspiciatis numquam impedit amet
-            debitis ex fugiat architecto labore molestias facilis deleniti aliquam officiis ut nemo a laudantium dolore
-            eaque, eius laborum voluptatibus fuga! In mollitia, autem alias reprehenderit, animi accusantium, officiis
-            aut tenetur eveniet facere nostrum temporibus repellat hic?</p>
+        <div class="dos-columnas columna30-70">
+            <img src="images/publicidad.webp" alt="">
+            <div>
+                <h2>Publicidad</h2>
+                <p>La publicidad es la herramienta de comunicación por excelencia que te permite aumentar la base de
+                    clientes.</p>
+                <p>En Pixel Cloud entendemos que la publicidad digital engloba toda la comunicación de la marca así
+                    como las estrategias de promoción a través de medios digitales.</p>
+                <p>Este es el medio idóneo y más efectivo para atraer nuevos clientes, ya que nos permite ahorrar tiempo
+                    y
+                    costos al dirigirse a los usuarios específicos en un medio donde pueden interactuar con la marca.
+                </p>
+            </div>
+        </div>
+        <div class="dos-columnas columna70-30">
+            <div>
+                <h2>Diseño Web</h2>
+                <p>Mejora la imagen y credibilidad de tu marca.</p>
+                <p>Aumenta tus ventas automatizando el proceso de compra.</p>
+                <p>Facilita la gestión de pedidos, envíos y todo el proceso post venta.</p>
+                <p>Registra los datos de tus clientes para poder realizar promociones y descuentos.</p>
+                <p>Ofrece servicios e información relacionada a tu producto o servicio para atraer potenciales clientes.
+                </p>
+            </div>
+            <img src="images/disenio_web.webp" alt="">
+        </div>
+        <div class="dos-columnas columna30-70">
+            <img src="images/data_analytics.webp" alt="">
+            <div>
+                <h2>Data analytics</h2>
+                <p>Se trata de un grupo de tareas para identificar la necesidad del negocio a fin de trabajar en su
+                    solución.</p>
+                <p>La tendencia a trabajar en base al análisis de datos está en aumento ya que las organizaciones que
+                    trabajan de esta manera pueden tomar mejores decisiones operativas y gestionar los riesgos. Además,
+                    logran un crecimiento rentable y sostenible.</p>
+            </div>
+        </div>
     </main>
     <footer class="footer">
-        <div class="footer__contact" id="contacto">
-            <p>Formulario de contacto</p>
+        <div class="contact" id="contacto">
+            <h3>Consiga su plan ideal</h3>
+            <span>Envie un mensaje y comuníquese con nosotros</span>
+            <form class="contact__form">
+                <div>
+                    <input type="text" id="name" name="name" required placeholder="Nombre" />
+                    <input type="email" id="email" name="email" required placeholder="Email" />
+                </div>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <input class="submit" type="submit" value="Enviar" />
+            </form>
         </div>
         <ul class="footer__redes-menu redes-menu nav-menu">
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="facebook.com" target="_blank"><span
-                        class="sr-text">Facebook</span></a></li>
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="twitter.com" target="_blank"><span
-                        class="sr-text">Twitter</span></a></li>
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="instagram.com" target="_blank"><span
-                        class="sr-text">Instagram</span></a></li>
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="youtube.com" target="_blank"><span
-                        class="sr-text">Youtube</span></a></li>
-            <li class="redes-menu_link nav-item"><a class="nav-link" href="linkedin.com" target="_blank"><span
-                        class="sr-text">LinkedIn</span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://facebook.com" target="_blank"><span
+                        class="sr-text">Facebook<i class="fab fa-facebook-square"></i></span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://twitter.com" target="_blank"><span
+                        class="sr-text">Twitter<i class="fab fa-twitter-square"></i></span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://instagram.com" target="_blank"><span
+                        class="sr-text">Instagram<i class="fab fa-instagram-square"></i></span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://youtube.com" target="_blank"><span
+                        class="sr-text">Youtube<i class="fab fa-youtube-square"></i></span></a></li>
+            <li class="redes-menu_link nav-item"><a class="nav-link" href="https://linkedin.com" target="_blank"><span
+                        class="sr-text">LinkedIn<i class="fab fa-linkedin"></i></span></a></li>
         </ul>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
