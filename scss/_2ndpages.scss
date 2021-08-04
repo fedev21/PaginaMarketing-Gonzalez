@@ -6,7 +6,8 @@
     background-position: center;
     background-attachment: scroll;
   }
-  &-nosotros {
+  &-nosotros,
+  &-contact {
     background-image: url(../images/banner_nosotros.jpg);
     height: 40vh;
     background-position: center;
