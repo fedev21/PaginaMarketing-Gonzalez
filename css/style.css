@@ -272,6 +272,7 @@ img {
   }
 }
 
+/* Inicio */
 main {
   margin-bottom: 50px;
 }
@@ -400,6 +401,7 @@ section.content p {
   text-align: center;
 }
 
+/* Paginas Secundarias */
 .banner_index-servicios {
   background-image: url(../images/banner_servicios.jpg);
   height: 40vh;
@@ -532,24 +534,150 @@ section.content p {
 
 /* Cursos */
 .cursos {
-  margin: 50px 0;
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767px) {
+  .cursos {
+    margin: 0;
+  }
 }
 .cursos__table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+  /* Responsive */
+}
+.cursos__table td,
+.cursos__table th {
+  text-align: center;
+  padding: 8px;
+}
+.cursos__table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+.cursos__table thead th {
+  color: var(--black-color);
+  background: var(--primary-color);
+}
+.cursos__table thead th:nth-child(odd) {
+  color: var(--white-color);
+  background: var(--second-color);
+}
+.cursos__table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+@media (max-width: 767px) {
+  .cursos__table {
+    display: block;
+    width: 100%;
+  }
+  .cursos__table thead,
+.cursos__table tbody,
+.cursos__table thead th {
+    display: block;
+  }
+  .cursos__table thead {
+    float: left;
+  }
+  .cursos__table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+  .cursos__table thead th:last-child {
+    border-bottom: none;
+  }
+  .cursos__table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  .cursos__table tbody tr {
+    display: table-cell;
+  }
+  .cursos__table tbody tr:nth-child(odd) {
+    background: none;
+  }
+  .cursos__table tbody td {
+    display: block;
+    text-align: center;
+  }
+  .cursos__table td,
+.cursos__table th {
+    padding: 20px 0.625em 0.625em 0.625em;
+    height: 60px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+  }
+  .cursos__table tr:nth-child(even) {
+    background: transparent;
+  }
+  .cursos__table tr td:nth-child(odd) {
+    background: #f8f8f8;
+    border-right: 1px solid #e6e4e4;
+  }
+  .cursos__table tr td:nth-child(even) {
+    border-right: 1px solid #e6e4e4;
+  }
+}
+
+/* Contacto */
+.contact h3,
+.contact span {
+  font-weight: bold;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  padding: 20px;
-  background: white;
+  margin-top: 20px;
+  width: 70%;
+  background-color: #ffffff26;
+  transition: all 0.2s;
 }
-.cursos__table tr th {
-  text-transform: uppercase;
+@media only screen and (min-width: 768px) {
+  .contact__form {
+    padding: 40px 100px;
+  }
 }
-.cursos__table tr td {
-  border: 2px solid var(--black-color);
-  padding: 5px;
+.contact__form div {
+  display: flex;
+  justify-content: space-between;
 }
-.cursos__table tr td ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.contact__form div input {
+  width: 49%;
+}
+.contact__form input,
+.contact__form textarea {
+  font-weight: bold;
+  min-height: 50px;
+  padding-left: 5px;
+  margin: 10px 0;
+  border: none;
+}
+.contact__form input:focus,
+.contact__form textarea:focus {
+  border-radius: none;
+}
+.contact__form .submit:hover {
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.contact_wrapper {
+  text-align: center;
 }
 
 /* Footer */
@@ -561,47 +689,6 @@ footer {
   footer {
     padding: 50px;
   }
-}
-footer .contact h3,
-footer .contact span {
-  font-weight: bold;
-}
-footer .contact__form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 70%;
-  background-color: #ffffff26;
-  transition: all 0.2s;
-}
-@media only screen and (min-width: 768px) {
-  footer .contact__form {
-    padding: 40px 100px;
-  }
-}
-footer .contact__form div {
-  display: flex;
-  justify-content: space-between;
-}
-footer .contact__form div input {
-  width: 49%;
-}
-footer .contact__form input,
-footer .contact__form textarea {
-  font-weight: bold;
-  min-height: 50px;
-  padding-left: 5px;
-  margin: 10px 0;
-  border: none;
-}
-footer .contact__form input:focus,
-footer .contact__form textarea:focus {
-  border-radius: none;
-}
-footer .contact__form .submit:hover {
-  color: var(--white-color);
-  background-color: var(--black-color);
 }
 footer .redes-menu {
   margin-top: 20px;

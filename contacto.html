@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descripcion del sitio">
-    <title>PixelCloud | Cursos</title>
+    <title>PixelCloud | Contacto</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,400&family=Roboto:wght@300&display=swap"
@@ -35,8 +35,9 @@
                         <li class="nav-item nav-link"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item nav-link"><a class="nav-link" href="servicios.html">Servicios</a></li>
                         <li class="nav-item nav-link"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item nav-link active"><a class="nav-link active" href="cursos.html">Cursos</a></li>
-                        <li class="nav-item nav-link"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item nav-link"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                        <li class="nav-item nav-link active"><a class="nav-link active"
+                                href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
@@ -46,93 +47,28 @@
         <div class="container banner_index__content">
             <div></div>
             <div>
-                <h2>Cursos.</h2>
-                <p>Puedes inscribirte a cualquiera de nuestros cursos. Tus consultas no molestan!</p>
+                <h2>Contacto.</h2>
+                <p>Tus consultas no molestan!</p>
             </div>
         </div>
     </div>
     <main class="content container">
-        <section class="cursos">
-            <table class="cursos__table">
-                <thead>
-                    <tr>
-                        <th>Cursos</th>
-                        <th>Duracion</th>
-                        <th>Horario</th>
-                        <th>Fecha</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diseño Web</td>
-                        <td>2 Meses</td>
-                        <td>Martes y Jueves 20hs a 22:30hs</td>
-                        <td>
-                            <ul>
-                                <li>14/05/2022</li>
-                                <li>16/06/2022</li>
-                                <li>15/07/2022</li>
-                            </ul>
-                        </td>
-                        <td>$15.000</td>
-                    </tr>
-                    <tr>
-                        <td>Community Manager</td>
-                        <td>3 Meses</td>
-                        <td>Martes y Jueves 20hs a 22:30hs</td>
-                        <td>
-                            <ul>
-                                <li>14/05/2022</li>
-                                <li>16/06/2022</li>
-                                <li>15/07/2022</li>
-                            </ul>
-                        </td>
-                        <td>$12.000</td>
-                    </tr>
-                    <tr>
-                        <td>Marketing</td>
-                        <td>2 Meses</td>
-                        <td>Martes y Jueves 20hs a 22:30hs</td>
-                        <td>
-                            <ul>
-                                <li>14/05/2022</li>
-                                <li>16/06/2022</li>
-                                <li>15/07/2022</li>
-                            </ul>
-                        </td>
-                        <td>$25.000</td>
-                    </tr>
-                    <tr>
-                        <td>UX/UI</td>
-                        <td>2 Meses</td>
-                        <td>Martes y Jueves 20hs a 22:30hs</td>
-                        <td>
-                            <ul>
-                                <li>14/05/2022</li>
-                                <li>16/06/2022</li>
-                                <li>15/07/2022</li>
-                            </ul>
-                        </td>
-                        <td>$18.000</td>
-                    </tr>
-                <tbody>
-            </table>
+        <section class="contact_wrapper">
+            <div class="contact" id="contacto">
+                <h3>Consiga su plan ideal</h3>
+                <span>Envie un mensaje y comuníquese con nosotros</span>
+                <form class="contact__form">
+                    <div>
+                        <input type="text" id="name" name="name" required placeholder="Nombre" />
+                        <input type="email" id="email" name="email" required placeholder="Email" />
+                    </div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <input class="submit" type="submit" value="Enviar" />
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="contact" id="contacto">
-            <h3>Consiga su plan ideal</h3>
-            <span>Envie un mensaje y comuníquese con nosotros</span>
-            <form class="contact__form">
-                <div>
-                    <input type="text" id="name" name="name" required placeholder="Nombre" />
-                    <input type="email" id="email" name="email" required placeholder="Email" />
-                </div>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                <input class="submit" type="submit" value="Enviar" />
-            </form>
-        </div>
         <ul class="footer__redes-menu redes-menu nav-menu">
             <li class="redes-menu_link nav-item"><a class="nav-link" href="https://facebook.com" target="_blank"><span
                         class="sr-text">Facebook<i class="fab fa-facebook-square"></i></span></a></li>

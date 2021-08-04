@@ -1,23 +1,111 @@
 /* Cursos */
-$paddingcursos: 20px;
 
 .cursos {
-    margin: 50px 0;
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+    @media (max-width: 767px) {
+        margin: 0;
+    }
+
     &__table {
-        margin: 0 auto;
-        padding: $paddingcursos;
-        background: white;
-        tr {
-            th {
-                text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: normal;
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        background-color: white;
+
+        td,
+        th {
+            text-align: center;
+            padding: 8px;
+        }
+
+        td {
+            border-right: 1px solid #f8f8f8;
+            font-size: 12px;
+        }
+
+        thead th {
+            color: var(--black-color);
+            background: var(--primary-color);
+            &:nth-child(odd) {
+                color: var(--white-color);
+                background: var(--second-color);
             }
-            td {
-                border: 2px solid var(--black-color);
-                padding: ($paddingcursos)-15;
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f8f8;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 767px) {
+            display: block;
+            width: 100%;
+
+            thead,
+            tbody,
+            thead th {
+                display: block;
+            }
+
+            thead {
+                float: left;
+                th {
+                    text-align: left;
+                    border-bottom: 1px solid #f7f7f9;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            tbody {
+                width: auto;
+                position: relative;
+                overflow-x: auto;
+                tr {
+                    display: table-cell;
+                }
+                tr:nth-child(odd) {
+                    background: none;
+                }
+                td {
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            td,
+            th {
+                padding: 20px 0.625em 0.625em 0.625em;
+                height: 60px;
+                vertical-align: middle;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                overflow-y: auto;
+                width: 120px;
+                font-size: 13px;
+                text-overflow: ellipsis;
+            }
+
+            tr {
+                &:nth-child(even) {
+                    background: transparent;
+                }
+                td {
+                    &:nth-child(odd) {
+                        background: #f8f8f8;
+                        border-right: 1px solid #e6e4e4;
+                    }
+                    &:nth-child(even) {
+                        border-right: 1px solid #e6e4e4;
+                    }
                 }
             }
         }
