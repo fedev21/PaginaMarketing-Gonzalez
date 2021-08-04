@@ -109,7 +109,10 @@ img {
   font-size: 0;
 }
 .redes-menu_link a i {
-  font-size: 35px;
+  font-size: 32px;
+}
+.redes-menu_link a:hover {
+  padding: 4px 12.5px;
 }
 .redes-menu_link a:hover i {
   font-size: 40px;

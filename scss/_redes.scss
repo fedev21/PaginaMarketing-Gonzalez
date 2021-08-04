@@ -28,10 +28,13 @@ $redes: (
                 }
             }
             i {
-                font-size: 35px;
+                font-size: 32px;
             }
-            &:hover i {
-                font-size: 40px;
+            &:hover {
+                padding: 4px 12.5px;
+                i {
+                    font-size: 40px;
+                }
             }
         }
     }
